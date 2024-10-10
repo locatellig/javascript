@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Escopo</title>
+    </head>
+
+    <script>
+        //3 escopos: global, função e bloco
+        
+        //Escopo global
+        var serie = 'Friends';
+
+        //escopo de bloco
+        if (true) {
+            var serie2 = 'Game of Thrones';
+            document.write(serie);
+        }
+
+        document.write('<br/>');
+
+        //tem acesso pois o bloco está dentro de um escopo global
+        document.write(serie2);
+        
+    </script>
+
+    <body>
+
+        
+
+
+
+    </body>
+
+</html>
