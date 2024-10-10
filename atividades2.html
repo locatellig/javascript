@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+
+<script>
+
+    alert('Olá, vou precisar de algumas informações suas para prosseguir');
+
+    var nome = prompt('Nome:');
+    var altura = prompt('Altura em centímetros:');
+    var peso = prompt('Peso(kg):');
+
+    altura = parseFloat(altura);
+    peso = parseFloat(peso);
+
+    altura /= 100;
+
+    var massaCorporal = peso / (altura * altura);
+
+    var classificacaoMassaCorporal = '';
+
+    if (massaCorporal < 16) {
+        classificacaoMassaCorporal = 'Baixo peso muito grave';
+    }
+    else if ((massaCorporal >= 16) && (massaCorporal <= 16.99)) {
+        classificacaoMassaCorporal = 'Baixo peso grave';
+    }
+    else if ((massaCorporal >= 17) && (massaCorporal <= 18.49)) {
+        classificacaoMassaCorporal = 'Baixo peso';
+    }
+    else if ((massaCorporal >= 18.50) && (massaCorporal <= 24.99)) {
+        classificacaoMassaCorporal = 'Peso normal';
+    }
+    else if ((massaCorporal >= 25) && (massaCorporal <= 29.99)) {
+        classificacaoMassaCorporal = 'Sobrepeso';
+    }
+    else if ((massaCorporal >= 30) && (massaCorporal <= 34.99)) {
+        classificacaoMassaCorporal = 'Obesidade grau I';
+    }
+    else if ((massaCorporal >= 35) && (massaCorporal <= 39.99)) {
+        classificacaoMassaCorporal = 'Obesidade grau II';
+    }
+    else {
+        classificacaoMassaCorporal = 'Obesidade grau III';
+    }
+
+    alert(nome + ' possui índice de massa corporal igual a ' + massaCorporal + ', sendo classificado como: ' + classificacaoMassaCorporal);
+
+</script>
+
+<body>
+
+
+
+
+
+</body>
+
+</html>

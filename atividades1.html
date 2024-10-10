@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - Faixa etária</title>
+</head>
+
+<script>
+    alert('Bem vindo');
+
+    var idade = prompt('Digite sua idade:');
+    var faixaEtaria = null;
+
+    if ((idade >= 0) && (idade < 15)){
+        faixaEtaria = 'Criança';   
+    }
+    else if ((idade >= 15) && (idade < 30)){
+        faixaEtaria = 'Jovem';
+    }
+    else if ((idade >= 30) && (idade < 60)){
+        faixaEtaria = 'Adulto';
+    }
+    else {
+        faixaEtaria = 'Idoso';
+    }
+
+    document.write(faixaEtaria);
+
+</script>
+
+<body>
+
+
+
+
+
+</body>
+
+</html>

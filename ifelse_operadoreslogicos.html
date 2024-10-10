@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores lógicos</title>
+</head>
+
+<script>
+
+    // and e or
+    // if ((2 == 2) && (3 >= 1) || ('a' == 'b')) {
+    //     document.write('Verdadeiro');
+    // }
+    // else {
+    //     document.write('Falso');
+    // }
+
+    // not
+    // if (!(4 == 2)) {
+    //     document.write('Verdadeiro');
+    // }
+
+    var media = 7.00
+    var faltasMaximas = 15
+    var notaAluno = prompt('Digite a nota do aluno:');
+    var faltasAluno = prompt('Digite a quantidade de faltas:')
+
+    // if ((notaAluno >= media) && (faltasAluno <= faltasMaximas)) {
+    //     document.write('Aprovado')
+    // }
+    // else {
+    //     document.write('Reprovado')
+    // }
+
+    //operador ternário
+    //<condicao> ? <verdadeiro> : <falso>
+    var resultado = ((notaAluno >= media) && (faltasAluno <= faltasMaximas)) ? 'Aprovado' : 'Reprovado'; 
+
+    document.write(resultado);
+</script>
+
+<body>
+
+
+
+
+
+</body>
+
+</html>

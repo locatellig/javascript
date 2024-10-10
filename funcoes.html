@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+
+<script>
+
+    //void - não gera nenhum retorno para quem fez a chamada, apenas realiza o processo dentro dela.
+    //return - retorna um valor para quem fez a chamada.
+
+    /*
+    function calcularAreaTerreno(largura, comprimento){
+        
+        var area = largura * comprimento;
+
+        // document.write('O terreno possui: ' + area + ' metros quadrados');
+
+        return area;
+    }
+
+    document.write('O terreno possui: ' + calcularAreaTerreno(15, 25) + ' metros quadrados.');
+    */
+    // ------------------------------------------------------------------------------------------------------
+
+    function soma(a, b, c) {
+
+        c = (c === undefined) ? 0 : c;
+
+        return a + b + c;
+    }
+
+    console.log(soma(7, 7, 5));
+    
+    console.log(soma(7, 7, 5, 4)); //ele descarta os parametros adicionais
+
+    console.log(soma(7, 7));
+
+</script>
+
+<body>
+
+
+
+
+
+</body>
+
+</html>
