@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - soma e subtração</title>
+</head>
+
+<script>
+    function calculaSomaSubtracao(num1, num2, operacao){
+        num1 = parseFloat(num1);
+        num2 = parseFloat(num2);
+
+        if (operacao.toUpperCase() === 'SOMA'){
+            return num1 + num2;
+        }
+        else{
+            return num1 - num2;
+        }
+    }
+
+    alert('Bem vindo');
+
+    var num1 = prompt('Informe um número:');
+
+    var operacao = prompt('Informe a operação(soma ou subtração):');
+
+    var num2 = prompt('Informe outro número:');
+
+    document.write('O resultado é: ' + calculaSomaSubtracao(num1, num2, operacao));
+
+</script>
+
+<body>
+
+
+
+
+
+</body>
+
+</html>

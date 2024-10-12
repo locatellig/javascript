@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+
+<script>
+
+    var data = new Date(); //Instância do obj date.
+
+    // document.write(data.getDate()); //Retorna o dia do mês do sistema operacional.
+
+    // document.write(data.getMonth() + 1); //vai de 0 - 11 os meses, por isso o + 1.
+
+    // document.write(data.getFullYear()); //retorna o ano.
+
+    // document.write(data.getDate() + '/' + (data.getMonth() + 1)  + '/' + data.getFullYear());
+
+    //===========================================================================================
+
+    // document.write(data.toString() + '<br/>');
+
+    // data.setDate(data.getDate() + 1); //adiciona / remove dias
+
+    // data.setMonth(data.getMonth() - 1); //adiciona / remove meses
+
+    // data.setFullYear(data.getFullYear() + 1); //adiciona / remove anos
+
+    // document.write(data.toString());
+
+    // 15/01/2017
+    var data1 = new Date(2017, 0, 15);
+
+    // 23/02/2017
+    var data2 = new Date(2017, 1, 23);
+
+    document.write(data1.toString());
+
+    document.write('<hr/>');
+
+    document.write(data2.toString());
+
+    document.write('<hr/>');
+
+    //encontrando a diferença entre as datas
+    //getTime transforma para milissegundos desde a data 1 de janeiro de 1970, calculando a diferença consigo obter a diferença de tempo
+    document.write(data1.getTime());
+
+    document.write('<hr/>');
+
+    document.write(data2.getTime());
+
+    document.write('<hr/>');
+
+    document.write(Math.abs(data1.getTime() - data2.getTime()));
+
+    document.write('<hr/>');
+
+    //1 dia possui 86400000 milissegundos
+    document.write(Math.ceil((Math.abs(data1.getTime() - data2.getTime()) / 86400000)));
+
+
+</script>
+
+<body>
+
+
+</body>
+
+</html>
