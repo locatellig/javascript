@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+
+        function modificaEstilo(corFundo, largura, altura){
+            document.getElementById('quadrado').style.background = corFundo; //.style acessa os atributos style do elemento, permitindo modificações visuais
+            document.getElementById('quadrado').style.width = largura;
+            document.getElementById('quadrado').style.height = altura;
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <h3>Manipulando estilos</h3>
+
+    <button type="button" onclick="modificaEstilo('#FF0000', '150px', '100px')">Vermelho</button>
+    <button type="button" onclick="modificaEstilo('#00FF00', '10px', '50px')">Verde</button>
+    <button type="button" onclick="modificaEstilo('#0000FF', '200px', '100px')">Azul</button>
+    <button type="button" onclick="modificaEstilo('none', '100px', '100px')">Limpar</button>
+
+    <hr/>
+
+    <div style="border: solid 1px black; width: 100px; height: 100px;" id="quadrado"></div>
+
+</body>
+
+</html>

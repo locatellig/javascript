@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - eventos</title>
+</head>
+
+<script>
+    
+    function recebeFoco() {
+        document.getElementById('input_usuario').style.backgroundColor = '#FFF017';
+    }
+
+    function validaQuantidadeDeCaracteres() {
+        if (document.getElementById('input_usuario').value.length < 3) {
+            document.getElementById('input_usuario').style.backgroundColor = '#FF171F'
+        }
+        else {
+            document.getElementById('input_usuario').style.backgroundColor = '#3AFF17'
+        }
+    }
+
+</script>
+
+<body>
+
+    <input 
+        type="text"
+        id="input_usuario"
+        placeholder="Digite seu usuário"
+        onfocus="recebeFoco()"
+        onblur="validaQuantidadeDeCaracteres()"
+    />
+
+</body>
+
+</html>

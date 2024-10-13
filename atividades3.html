@@ -8,14 +8,14 @@
 </head>
 
 <script>
-    function calculaSomaSubtracao(num1, num2, operacao){
+    function calculaSomaouSubtracao(num1, num2, operacao){
         num1 = parseFloat(num1);
         num2 = parseFloat(num2);
 
         if (operacao.toUpperCase() === 'SOMA'){
             return num1 + num2;
         }
-        else{
+        else {
             return num1 - num2;
         }
     }
@@ -28,7 +28,7 @@
 
     var num2 = prompt('Informe outro número:');
 
-    document.write('O resultado é: ' + calculaSomaSubtracao(num1, num2, operacao));
+    document.write('O resultado é: ' + calculaSomaouSubtracao(num1, num2, operacao));
 
 </script>
 
