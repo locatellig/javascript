@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+
+        var listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda'];
+        document.write(listaFuncionarios[3] + '<br/>')
+
+        //Função do objeto array(ele espera uma função de callback para saber como deve atuar sobre os índices do array,
+        //                       a lógica passada na função irá atuar sobre cada um dos índices.)
+        console.log(listaFuncionarios);
+
+        var funcaoCallBack = function (valor, indice, array) {
+            console.log('índice: ' + indice + ' | valor: ' + valor);
+
+            if (valor == 'Lucas') {
+                array[indice] = 'Guilherme';
+            }
+        }
+
+        listaFuncionarios.forEach(funcaoCallBack);
+
+        document.write(listaFuncionarios[3] + '<br/>')
+        console.log(listaFuncionarios);
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

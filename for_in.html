@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+
+        var listaConvidados = ['Jorge', 'Jamilton', 'Ana', 'Maria'];
+
+        for(var x in listaConvidados){
+            console.log('Índice ' + x + ' valor ' + listaConvidados[x]);
+        }
+
+        var listaConvidadosEspeciais = [];
+
+        listaConvidadosEspeciais['a'] = 'Jorge';
+        listaConvidadosEspeciais[10] = 'Jamilton';
+        listaConvidadosEspeciais['zebra'] = 'Ana';
+        listaConvidadosEspeciais[true] = 'Maria';
+
+        for(var x in listaConvidadosEspeciais){
+            console.log('Novos Índices ' + x + ' valor ' + listaConvidadosEspeciais[x]);
+        }
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

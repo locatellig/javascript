@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+    <script>
+        
+        var lista_frutas = ['Banana', 'Maçã', 'Morango', 'Uva'];
+
+        document.write('<h2>While</h2>');
+
+        var z = 0;
+        
+        while(z < lista_frutas.length) {
+            document.write(lista_frutas[z] + '<br/>');
+            z++
+        }
+
+        document.write('<hr/>')
+
+        document.write('<h2>for</h2>');
+        for(var y = 0; y < lista_frutas.length; y++){
+            document.write(lista_frutas[y] + '<br/>');
+        }   
+
+        document.write('<hr/>')
+
+        document.write('<h2>for in</h2>');
+        for(var y in lista_frutas) {
+            document.write(lista_frutas[y] + '<br/>');
+        }
+
+        document.write('<hr/>')
+
+        document.write('<h2>forEach</h2>');
+        var funcaoCallBack = function(valor) {
+            document.write(valor + '<br/>');
+        }
+
+        lista_frutas.forEach(funcaoCallBack);
+
+        document.write('<hr/>')
+
+
+        
+        
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
