@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo</title>
+</head>
+
+<script>
+
+    // throw new Error('Erro forçado pelo throw'); //throw força um erro.
+
+    var video = Array();
+
+    video[1] = Array();
+    video[1]['nome'] = 'Fullmetal Alchemist';
+    video[1]['categoria'] = 'Anime';
+
+    function getVideo(video) {
+
+        try{
+            console.log(video[0]['nome']);
+        }catch(e){//catch captura e trata o erro, o parâmetro que é recebido por ele é a mensagem de erro gerada no try.
+            trataErro(e);
+            console.log('Erro tratado');
+        } 
+        finally {
+            console.log('Sempre passa por aqui(finally)');
+        }
+
+        console.log('Não estourou');
+    }
+
+    function trataErro(erro){
+        console.log(erro);
+    }
+
+    getVideo(video);
+</script>
+
+<body>
+
+
+
+
+
+</body>
+
+</html>

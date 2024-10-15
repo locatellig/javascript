@@ -26,6 +26,7 @@
     */
     // ------------------------------------------------------------------------------------------------------
 
+    /*
     function soma(a, b, c) {
 
         c = (c === undefined) ? 0 : c;
@@ -38,6 +39,20 @@
     console.log(soma(7, 7, 5, 4)); //ele descarta os parametros adicionais
 
     console.log(soma(7, 7));
+    */
+
+    //Função com parâmetros variáveis
+    function soma(){
+        var resultado = 0;
+        for(var i in arguments) {
+            resultado += arguments[i]; 
+        }
+
+        return resultado;
+        //console.log(arguments); //arguments serve para recuperar todos os parâmetros passados para uma função
+    }
+
+    console.log(soma(7, 5, 2.2));
 
 </script>
 
