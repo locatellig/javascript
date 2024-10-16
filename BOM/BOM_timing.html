@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo</title>
+</head>
+
+<script>
+
+    function alteraURL() {
+        window.location.href = 'https://pay.kirvano.com/r/8c6c5ae3-1b80-4f20-a6c9-8ef814e19454';
+    }
+
+    //Executa uma única vez a ação
+    function setTimeoutFunction() {
+        setTimeout(alteraURL, 3000);
+        // clearTimeout();
+    }
+
+    //Sempre executa a função após o período informado
+    function setIntervalFunction() {
+        // setInterval(function(){document.write('3 segundos' + '<br/>')}, 3000);
+        var i = 5;
+        setInterval(function reloadPageAfterFiveSec() {
+            document.write(i + '<br/>');
+            i--
+            if (i === 0) {
+                window.location.reload();
+            } 
+        }, 1000);
+    }
+
+
+</script>
+
+<body>
+
+    <button onclick="setTimeoutFunction()">SetTime</button>
+    <button onclick="setIntervalFunction()">Intervalo</button>
+
+</body>
+
+</html>

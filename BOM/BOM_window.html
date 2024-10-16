@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo</title>
+</head>
+
+<script>
+
+    var janela
+
+    function abrirPopUp() {
+       janela = window.open('http://www.google.com', 'nova_janela', 'width=500, height=600');
+    }
+
+    function fecharPopUp() {
+        janela.close();
+    }
+
+</script>
+
+<body>
+
+    <button onclick="abrirPopUp()">Abrir Janela</button>
+    <button onclick="fecharPopUp()">Fechar Janela</button>
+
+</body>
+
+</html>
