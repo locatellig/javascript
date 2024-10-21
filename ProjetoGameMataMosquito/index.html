@@ -5,30 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Mata Mosquito</title>
-    <script src="jogo.js"></script>
-    <link rel="stylesheet" href="css/style.css"/>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script>
+        function iniciarJogo() {
+            var nivel = document.getElementById('nivel').value;
+
+            if (nivel === '') {
+                alert('Selecione um nível para iniciar o jogo')
+                return false;
+            }
+
+            //parametros encaminhados para página após o ?
+            window.location.href = 'jogo.html?' + nivel;
+        }
+    </script>
 </head>
 
-<body onresize="ajustaTamanhoPalcoJogo()">
-    <!-- Incio painel -->
-    <div class="painel">
-        <!-- Inicio vidas -->
-        <div class="vidas">
-            <img id="vida1" src="Imagens/coracao_cheio.png">
-            <img id="vida2" src="Imagens/coracao_cheio.png">
-            <img id="vida3" src="Imagens/coracao_cheio.png">
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <img src="Imagens/game.png" alt="">
+                </div>
+            </div>
         </div>
 
-        <!-- Inicio cronometro -->
-        <div class="cronometro">
-            Tempo restante:
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <div class="mb-2">
+                        <select id="nivel" class="form-control text-center">
+                            <option value="">-- Selecione o nível --</option>
+                            <option value="normal">Normal</option>
+                            <option value="dificil">Difícil</option>
+                            <option value="muito_dificil">Muito Difícil</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-danger btn-lg" onclick="iniciarJogo()">Iniciar Jogo</button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <script>
-        ajustaTamanhoPalcoJogo();
-        posicaoRandomicaMosquito();
-    </script>
 </body>
 
 </html>

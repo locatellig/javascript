@@ -1,3 +1,7 @@
+html {
+    cursor: url(../Imagens/mata_mosquito.png) 30 30, auto;
+}
+
 body{ 
     background: url(../Imagens/bg.jpg) no-repeat;
 }
